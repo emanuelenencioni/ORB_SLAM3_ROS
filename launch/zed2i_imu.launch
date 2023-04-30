@@ -1,0 +1,29 @@
+<launch>
+    <node name="orb_slam3_stereo_inertial" pkg="orb_slam3_ros_wrapper" type="orb_slam3_ros_wrapper_stereo_inertial" output="screen">
+        <!-- for zed2i -->
+        <remap from="/camera/left/image_raw"    to="/zed2i/zed_node/left/image_rect_color"/>
+        <remap from="/camera/right/image_raw"   to="/zed2i/zed_node/right/image_rect_color"/>
+        <remap from="/imu"                      to="/zed2i/zed_node/imu/data_raw"/>
+        <param name="cone_detection" type="string" value="/cone_detection/output"/>
+        <!-- Parameters for original ORB-SLAM3 -->
+        <param name="voc_file"      type="string"   value="$(find orb_slam3_ros_wrapper)/config/ORBvoc.txt" />
+        <param name="settings_file" type="string"   value="$(find orb_slam3_ros_wrapper)/config/zed2i_imu.yaml" />
+    
+        <!-- Parameters for ROS -->
+        <param name="world_frame_id"    type="string"   value="map" />
+        <param name="cam_frame_id"      type="string"   value="camera" />
+        <param name="imu_frame_id"       type="string"    value="zed2i_left_camera_frame" />
+        <param name="enable_cone_detection" type="bool" value="false"/>
+        <param name="enable_pangolin" type="bool" value="true"/>
+    </node>
+    
+    <!-- Visualization - RViz-->
+    <!-- node name="rviz" pkg="rviz" type="rviz" args="-d $(find orb_slam3_ros_wrapper)/config/orb_slam3_no_imu.rviz" output="screen" /-->
+
+    <node pkg="hector_trajectory_server" type="hector_trajectory_server" name="trajectory_server_orb_slam3" output="screen" ns="orb_slam3_ros" >
+        <param name="/target_frame_name" value="/world" />
+        <param name="/source_frame_name" value="/camera" />
+        <param name="/trajectory_update_rate" value="20.0" />
+        <param name="/trajectory_publish_rate" value="20.0" />
+    </node>
+</launch>

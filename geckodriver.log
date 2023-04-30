@@ -1,0 +1,82 @@
+1675967432450	geckodriver	INFO	Listening on 127.0.0.1:36817
+1675967432525	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42929" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileZLY0VI"
+
+(firefox:1924877): Gtk-WARNING **: 19:30:32.639: Theme parsing error: gtk.css:73:46: The style property GtkScrolledWindow:scrollbars-within-bevel is deprecated and shouldn't be used anymore. It will be removed in a future version
+Gtk-Message: 19:30:32.675: Failed to load module "appmenu-gtk-module"
+
+(firefox:1924877): Gtk-WARNING **: 19:30:33.175: Theme parsing error: gtk.css:68:35: The style property GtkButton:child-displacement-x is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(firefox:1924877): Gtk-WARNING **: 19:30:33.175: Theme parsing error: gtk.css:69:35: The style property GtkButton:child-displacement-y is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(firefox:1924877): Gtk-WARNING **: 19:30:33.175: Theme parsing error: gtk.css:71:36: The style property GtkCheckMenuItem:indicator-size is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(firefox:1924877): Gtk-WARNING **: 19:30:33.175: Theme parsing error: gtk.css:73:46: The style property GtkScrolledWindow:scrollbars-within-bevel is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(firefox:1924877): Gtk-WARNING **: 19:30:33.175: Theme parsing error: gtk.css:76:30: The style property GtkExpander:expander-size is deprecated and shouldn't be used anymore. It will be removed in a future version
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1675967433521	Marionette	INFO	Marionette enabled
+1675967433527	Marionette	INFO	Listening on port 43507
+Read port: 43507
+WebDriver BiDi listening on ws://127.0.0.1:42929
+1675967433739	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZLY0VI/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:42929/devtools/browser/9d7eb5c0-7a90-4235-85ff-794b45f66957
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+1675967541243	Marionette	INFO	Stopped listening on port 43507
+1675967904005	geckodriver	INFO	Listening on 127.0.0.1:34189
+1675967904075	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49049" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilefutUi7"
+
+(firefox:1929041): Gtk-WARNING **: 19:38:24.187: Theme parsing error: gtk.css:73:46: The style property GtkScrolledWindow:scrollbars-within-bevel is deprecated and shouldn't be used anymore. It will be removed in a future version
+Gtk-Message: 19:38:24.239: Failed to load module "appmenu-gtk-module"
+
+(firefox:1929041): Gtk-WARNING **: 19:38:24.639: Theme parsing error: gtk.css:68:35: The style property GtkButton:child-displacement-x is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(firefox:1929041): Gtk-WARNING **: 19:38:24.639: Theme parsing error: gtk.css:69:35: The style property GtkButton:child-displacement-y is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(firefox:1929041): Gtk-WARNING **: 19:38:24.640: Theme parsing error: gtk.css:71:36: The style property GtkCheckMenuItem:indicator-size is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(firefox:1929041): Gtk-WARNING **: 19:38:24.640: Theme parsing error: gtk.css:73:46: The style property GtkScrolledWindow:scrollbars-within-bevel is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(firefox:1929041): Gtk-WARNING **: 19:38:24.640: Theme parsing error: gtk.css:76:30: The style property GtkExpander:expander-size is deprecated and shouldn't be used anymore. It will be removed in a future version
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1675967905013	Marionette	INFO	Marionette enabled
+1675967905021	Marionette	INFO	Listening on port 37349
+Read port: 37349
+WebDriver BiDi listening on ws://127.0.0.1:49049
+1675967905273	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilefutUi7/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49049/devtools/browser/6368da83-3b7f-46ec-bade-afa5724da894
+1675967927416	Marionette	INFO	Stopped listening on port 37349
+1675968115885	geckodriver	INFO	Listening on 127.0.0.1:50863
+1675968116422	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "34927" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilekdwvqL"
+
+(firefox:1931026): Gtk-WARNING **: 19:41:56.492: Theme parsing error: gtk.css:73:46: The style property GtkScrolledWindow:scrollbars-within-bevel is deprecated and shouldn't be used anymore. It will be removed in a future version
+Gtk-Message: 19:41:56.520: Failed to load module "appmenu-gtk-module"
+
+(firefox:1931026): Gtk-WARNING **: 19:41:56.870: Theme parsing error: gtk.css:68:35: The style property GtkButton:child-displacement-x is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(firefox:1931026): Gtk-WARNING **: 19:41:56.870: Theme parsing error: gtk.css:69:35: The style property GtkButton:child-displacement-y is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(firefox:1931026): Gtk-WARNING **: 19:41:56.870: Theme parsing error: gtk.css:71:36: The style property GtkCheckMenuItem:indicator-size is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(firefox:1931026): Gtk-WARNING **: 19:41:56.870: Theme parsing error: gtk.css:73:46: The style property GtkScrolledWindow:scrollbars-within-bevel is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(firefox:1931026): Gtk-WARNING **: 19:41:56.870: Theme parsing error: gtk.css:76:30: The style property GtkExpander:expander-size is deprecated and shouldn't be used anymore. It will be removed in a future version
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1675968117141	Marionette	INFO	Marionette enabled
+1675968117146	Marionette	INFO	Listening on port 43767
+Read port: 43767
+WebDriver BiDi listening on ws://127.0.0.1:34927
+1675968117298	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekdwvqL/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:34927/devtools/browser/aead7aea-5b54-459a-a43f-deeb2001532d
+1675968293061	Marionette	INFO	Stopped listening on port 43767
