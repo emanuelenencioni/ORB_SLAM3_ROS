@@ -61,3 +61,5 @@ The following topics are published by each node:
 - `/orb_slam3/map` ([`PointCloud2`](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/PointCloud2.html)): all point of the map.
 - `/orb_slam3/camera_pose` ([`PoseStamped`](http://docs.ros.org/en/melodic/api/geometry_msgs/html/msg/PoseStamped.html)): current left camera pose in world frame, as returned by ORB-SLAM3.
 - `tf`: transformation from camera frame to world frame.
+
+P.S. There is also Italian [documentation](https://github.com/emanuelenencioni/ORB_SLAM3_ROS/blob/main/doc/documentation.pdf) available  that explains the code and includes evaluations of the system.
