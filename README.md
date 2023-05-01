@@ -1,21 +1,12 @@
 # ROS wrapper for ORB-SLAM3
 
-A ROS wrapper for [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3). The main idea is to use the ORB-SLAM3 as a standalone library and interface with it instead of putting everything together. For that, you can check out [this package](https://github.com/thien94/orb_slam_3_ros).
+A ROS wrapper for [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3). Based on [this package](https://github.com/thien94/orb_slam_3_ros_wrapper). This is a modified version of ORB SLAM3, that include a method in the API that return all the MapPoint in the active Map.
 
 Tested with ORB-SLAM3 V1.0, primarily on Ubuntu 20.04.
 
-- **Pros**:
-  - Easy to update [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3#orb-slam3) indepedently.
-  - Easy to replace different variants that are not built for ROS.
-- **Cons**:
-  - Dependent on the exposed APIs from ORB-SLAM3.
-  - Development involves more steps (1. Make changes in ORB-SLAM3 library -> 2. Build ORB-SLAM3 -> 3. Change the roswrapper if necessary -> 4. Test).
-  - Might break when dependencies or upstream changes.
-
-
 # Installation
 
-General guide: first, install ORB-SLAM3 normally with all of its dependencies (any location is fine). Then, install this package in a ```catkin build``` environment.
+General guide: first, install all of ORB SLAM3 dependencies. Then, install this package in a ```catkin build``` environment.
 
 ## 1. ORB-SLAM3
 
@@ -23,16 +14,16 @@ General guide: first, install ORB-SLAM3 normally with all of its dependencies (a
 
 - Make sure that **`libORB_SLAM3.so`** is created in the *ORB_SLAM3/lib* folder. If not, check the issue list from the [original repo](https://github.com/UZ-SLAMLab/ORB_SLAM3/issues) and retry.
 
-## 2. orb_slam3_ros_wrapper
+## 2. ORB_SLAM3_ROS
 
 - Clone the package. Note that it should be a `catkin build` workspace.
 ```
 cd ~/catkin_ws/src/
-git clone https://github.com/thien94/orb_slam3_ros_wrapper.git
+git clone https://github.com/emanuelenencioni/ORB_SLAM3_ROS.git
 ```
 - Build ORB_SLAM3:
 ```
-cd /orb_slam3_ros_wrapper/ORB_SLAM3
+cd /ORB_SLAM3_ROS/ORB_SLAM3
 chmod +x build.sh
 ./build.sh
 
@@ -43,8 +34,6 @@ chmod +x build.sh
 cd ~/catkin_ws/
 catkin build
 ```
-
-- Next, copy the `ORBvoc.txt` file from `ORB-SLAM3/Vocabulary/` folder to the `config` folder in this package. Alternatively, you can change the `voc_file` param in the launch file to point to the right location.
 
 - (Optional) Install `hector-trajectory-server` to visualize the trajectory.
 ```
@@ -69,6 +58,6 @@ Similarly for other sensor types.
 
 # Topics
 The following topics are published by each node:
-- `/orb_slam3/map_points` ([`PointCloud2`](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/PointCloud2.html)): all keypoints being tracked.
+- `/orb_slam3/map` ([`PointCloud2`](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/PointCloud2.html)): all point of the map.
 - `/orb_slam3/camera_pose` ([`PoseStamped`](http://docs.ros.org/en/melodic/api/geometry_msgs/html/msg/PoseStamped.html)): current left camera pose in world frame, as returned by ORB-SLAM3.
 - `tf`: transformation from camera frame to world frame.
