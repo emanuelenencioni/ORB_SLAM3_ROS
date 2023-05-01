@@ -1,6 +1,6 @@
 # ROS wrapper for ORB-SLAM3
 
-A ROS wrapper for [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3). Based on [this package](https://github.com/thien94/orb_slam_3_ros_wrapper). This is a modified version of ORB SLAM3, that include a method in the API that return all the MapPoint in the active Map.
+A ROS wrapper for [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3). Based on [this package](https://github.com/thien94/orb_slam3_ros_wrapper). This is a modified version of ORB SLAM3, that include a method in the API that return all the MapPoint in the active Map.
 
 Tested with ORB-SLAM3 V1.0, primarily on Ubuntu 20.04.
 
