@@ -9,7 +9,7 @@
 
 	<node pkg="tf" type="static_transform_publisher" name="zed2i_diy4" args="-0.0020000000949949026 -0.023000003769993782 0.0002200000308221206 -0.0009611825807951391 -0.0015537014696747065 -0.0031502656638622284 0.9999933838844299 zed2i_left_camera_frame zed2i_imu_link 1000"/> 
 
-	<node name="orb_slam3_stereo" pkg="orb_slam3_ros_wrapper" type="orb_slam3_ros_wrapper_stereo" output="screen">
+	<node name="orb_slam3_stereo" pkg="orb_slam3_ros" type="orb_slam3_ros_stereo" output="screen">
 
         <remap from="/camera/left/image_raw"    to="/zed2i/zed_node/left/image_rect_color"/>
         <remap from="/camera/right/image_raw"   to="/zed2i/zed_node/right/image_rect_color"/>
@@ -17,8 +17,8 @@
 
         <param name="cone_detection" type="string" value="/cone_detection/output"/>
         <!-- Parameters for original ORB-SLAM3 -->
-        <param name="voc_file"      type="string"   value="$(find orb_slam3_ros_wrapper)/config/ORBvoc.txt" />
-        <param name="settings_file" type="string"   value="$(find orb_slam3_ros_wrapper)/config/zed2i.yaml" />
+        <param name="voc_file"      type="string"   value="$(find orb_slam3_ros)/config/ORBvoc.txt" />
+        <param name="settings_file" type="string"   value="$(find orb_slam3_ros)/config/zed2i.yaml" />
     
         <!-- Parameters for ROS -->
         <param name="world_frame_id"    type="string"   value="map" />

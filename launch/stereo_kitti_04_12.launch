@@ -1,20 +1,20 @@
 <launch>
-    <node name="orb_slam3_test" pkg="orb_slam3_ros_wrapper" type="orb_slam3_ros_wrapper_kitti_node" output="screen">
+    <node name="orb_slam3_test" pkg="orb_slam3_ros" type="orb_slam3_ros_kitti_node" output="screen">
 
         <!-- for EuRoC dataset -->
         <remap from="/camera/left/image_raw"    to="/kitti/left"/>
         <remap from="/camera/right/image_raw"   to="/kitti/right"/>
 
         <!-- Parameters for original ORB-SLAM3 -->
-        <param name="voc_file"      type="string"   value="$(find orb_slam3_ros_wrapper)/config/ORBvoc.txt" />
-        <param name="settings_file" type="string"   value="$(find orb_slam3_ros_wrapper)/config/kitti/KITTI04-12.yaml" />
+        <param name="voc_file"      type="string"   value="$(find orb_slam3_ros)/config/ORBvoc.txt" />
+        <param name="settings_file" type="string"   value="$(find orb_slam3_ros)/config/kitti/KITTI04-12.yaml" />
     
         <!-- Parameters for ROS -->
         <param name="enable_pangolin" type="bool" value="false"/>
     </node>
     
     <!-- Visualization - RViz-->
-    <!-- node name="rviz" pkg="rviz" type="rviz" args="-d $(find orb_slam3_ros_wrapper)/config/orb_slam3_no_imu.rviz" output="screen" /-->
+    <!-- node name="rviz" pkg="rviz" type="rviz" args="-d $(find orb_slam3_ros)/config/orb_slam3_no_imu.rviz" output="screen" /-->
 
     <!--node pkg="hector_trajectory_server" type="hector_trajectory_server" name="trajectory_server_orb_slam3" output="screen" ns="orb_slam3_ros" >
         <param name="/target_frame_name" value="/map" />

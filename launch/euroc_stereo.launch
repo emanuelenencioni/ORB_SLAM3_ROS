@@ -1,12 +1,12 @@
 <launch>
-    <node name="orb_slam3_stereo" pkg="orb_slam3_ros_wrapper" type="orb_slam3_ros_wrapper_stereo" output="screen">
+    <node name="orb_slam3_stereo" pkg="orb_slam3_ros" type="orb_slam3_ros_stereo" output="screen">
         <!-- for EuRoC dataset -->
         <remap from="/camera/left/image_raw"    to="/cam0/image_raw"/>
         <remap from="/camera/right/image_raw"   to="/cam1/image_raw"/>
 
         <!-- Parameters for original ORB-SLAM3 -->
-        <param name="voc_file"      type="string"   value="$(find orb_slam3_ros_wrapper)/config/ORBvoc.txt" />
-        <param name="settings_file" type="string"   value="$(find orb_slam3_ros_wrapper)/config/EuRoC.yaml" />
+        <param name="voc_file"      type="string"   value="$(find orb_slam3_ros)/config/ORBvoc.txt" />
+        <param name="settings_file" type="string"   value="$(find orb_slam3_ros)/config/EuRoC.yaml" />
     
         <!-- Parameters for ROS -->
         <param name="world_frame_id"    type="string"   value="world" />
@@ -14,7 +14,7 @@
     </node>
     
     <!-- Visualization - RViz-->
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find orb_slam3_ros_wrapper)/config/orb_slam3_no_imu.rviz" output="screen" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find orb_slam3_ros)/config/orb_slam3_no_imu.rviz" output="screen" />
 
     <node pkg="hector_trajectory_server" type="hector_trajectory_server" name="trajectory_server_orb_slam3" output="screen" ns="orb_slam3_ros" >
         <param name="/target_frame_name" value="/world" />

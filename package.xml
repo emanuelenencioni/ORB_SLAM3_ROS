@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package>
-    <name>orb_slam3_ros_wrapper</name>
+    <name>orb_slam3_ros</name>
     <version>0.0.1</version>
     <description>ROS wrapper for ORB SLAM3.</description>
 
-    <maintainer email="hoangthiennguyen94@gmail.com">Thien Nguyen</maintainer>
+    <maintainer email="emanencio@hotmail.com">Emanuele Nencioni</maintainer>
 
     <license>GPLv3</license>
 
