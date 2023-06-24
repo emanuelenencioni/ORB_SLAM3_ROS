@@ -20,7 +20,6 @@ int main(int argc, char **argv)
     Stereo node(&SLAM, common);
     message_filters::Subscriber<sensor_msgs::Image> left_sub(node_handler, "/camera/left/image_raw", 50);
     message_filters::Subscriber<sensor_msgs::Image> right_sub(node_handler, "/camera/right/image_raw", 50);
-    message_filters::Subscriber<driverless_msgs::bounding_boxes> cd_sub(node_handler, "/cone_detection/output", 50);
     
     typedef message_filters::sync_policies::ExactTime<sensor_msgs::Image, sensor_msgs::Image> sync_pol;
 

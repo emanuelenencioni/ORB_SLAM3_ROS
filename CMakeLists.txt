@@ -19,7 +19,6 @@ find_package (catkin REQUIRED COMPONENTS
    tf2
    sensor_msgs
    message_generation
-   driverless_msgs
 )
 
 find_package(OpenCV REQUIRED)
@@ -33,7 +32,7 @@ MESSAGE(${Eigen3_VERSION})
 find_package(Pangolin REQUIRED)
 
 catkin_package (
-   CATKIN_DEPENDS roscpp rospy std_msgs cv_bridge image_transport tf sensor_msgs message_runtime tf2 driverless_msgs
+   CATKIN_DEPENDS roscpp rospy std_msgs cv_bridge image_transport tf sensor_msgs message_runtime tf2
    LIBRARIES {PROJECT_NAME}
 )
 

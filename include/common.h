@@ -25,7 +25,6 @@
 #include <std_msgs/Header.h>
 #include <sensor_msgs/Imu.h>
 #include <sensor_msgs/PointCloud2.h>
-#include <driverless_msgs/bounding_boxes.h>
 
 #include <message_filters/subscriber.h>
 #include <message_filters/time_synchronizer.h>
