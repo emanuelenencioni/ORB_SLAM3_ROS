@@ -6,7 +6,7 @@
         <remap from="/camera/right/image_raw"   to="/kitti/right"/>
 
         <!-- Parameters for original ORB-SLAM3 -->
-        <param name="voc_file"      type="string"   value="$(find orb_slam3_ros)/config/ORBvoc.txt" />
+        <param name="voc_file"      type="string"   value="$(find orb_slam3_ros)/ORB_SLAM3/Vocabulary/ORBvoc.txt" />
         <param name="settings_file" type="string"   value="$(find orb_slam3_ros)/config/kitti/KITTI03.yaml" />
     
         <!-- Parameters for ROS -->

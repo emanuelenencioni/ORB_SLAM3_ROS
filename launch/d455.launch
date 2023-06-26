@@ -5,7 +5,7 @@
         <remap from="/camera/depth_registered/image_raw"    to="/camera/aligned_depth_to_color/image_raw"/>
 
         <!-- Parameters for original ORB-SLAM3 -->
-        <param name="voc_file"      type="string"   value="$(find orb_slam3_ros)/config/ORBvoc.txt" />
+        <param name="voc_file"      type="string"   value="$(find orb_slam3_ros)/ORB_SLAM3/Vocabulary/ORBvoc.txt" />
         <param name="settings_file" type="string"   value="$(find orb_slam3_ros)/config/RealSense_D455.yaml" />
 
         <!-- Parameters for ROS -->
