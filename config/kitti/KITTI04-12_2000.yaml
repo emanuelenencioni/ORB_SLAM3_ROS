@@ -8,16 +8,15 @@ File.version: "1.0"
 Camera.type: "Rectified"
 
 # Camera calibration and distortion parameters (OpenCV) 
-Camera1.fx: 721.5377
-Camera1.fy: 721.5377
-Camera1.cx: 609.5593
-Camera1.cy: 172.854
+Camera1.fx: 707.0912
+Camera1.fy: 707.0912
+Camera1.cx: 601.8873
+Camera1.cy: 183.1104
 
-Camera2.fx: 721.5377
-Camera2.fy: 721.5377
-Camera2.cx: 609.5593
-Camera2.cy: 172.854
-
+Camera2.fx: 707.0912
+Camera2.fy: 707.0912
+Camera2.cx: 601.8873
+Camera2.cy: 183.1104
 Camera.width: 1241
 Camera.height: 376
 
@@ -49,7 +48,7 @@ ORBextractor.nLevels: 8
 # Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
 # Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
 # You can lower these values if your images have low contrast			
-ORBextractor.iniThFAST: 20
+ORBextractor.iniThFAST: 12
 ORBextractor.minThFAST: 7
 
 #--------------------------------------------------------------------------------------------
