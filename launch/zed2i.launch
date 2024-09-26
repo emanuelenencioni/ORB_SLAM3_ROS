@@ -6,7 +6,6 @@
         <remap from="/camera/right/image_raw"   to="/zed2i/zed_node/right/image_rect_color"/>
 
 
-        <param name="cone_detection" type="string" value="/cone_detection/output"/>
         <!-- Parameters for original ORB-SLAM3 -->
         <param name="voc_file"      type="string"   value="$(find orb_slam3_ros)/ORB_SLAM3/Vocabulary/ORBvoc.txt" />
         <param name="settings_file" type="string"   value="$(find orb_slam3_ros)/config/zed2i.yaml" />
